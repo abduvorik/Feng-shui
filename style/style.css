@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1704px;
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.nav{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.list{
+display: flex;
+align-items:center;
+gap: 120px;
+}
+
+.nav__icons {
+    display: flex;
+    gap: 60px;
+}
+
+.header {
+    border: 1px solid #242424;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+     font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #242424;
+}
+
+.link {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #242424;
+
+}
+
+:root {
+  --font-family: "Share Tech Mono", sans-serif;
+}
+
+.content  {
+    height: 1000px;
+    background: url(../img/header.png)no-repeat center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}           
+
+.content .title {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 74px;
+text-transform: uppercase;
+color: #eee;
+margin-bottom: 40px;
+}
+
+.content .text {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #eee;
+margin-bottom: 60px;
+max-width: 984px;
+width: 100%;
+
+}
+
+.content .btn {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #eee;
+border: 2px solid #eee;
+padding-left: 106px;
+padding-right: 106px;
+padding-top: 27px;
+padding-bottom: 26px;
+
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top: 60px;
+}
+
+h2 {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+text-transform: uppercase;
+color: #f9f8f4;
+margin-bottom: 20px;
+}
+
+.shop__title {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 40px;
+text-transform: uppercase;
+color: #242424;
+margin-bottom: 40px;
+position: relative;
+max-width: max-content;
+width: 100%;
+
+}
+
+.shop__heading {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #242424;
+margin-bottom: 20px;
+}
+
+.shop__text {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: #6c6c6c;
+margin-bottom: 60px;
+}
+
+.discount {
+  background: #242424;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+text-transform: uppercase;
+color: #f9f8f4;
+width: 120px;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 24px;
+left: 24px;
+}
+
+.shop__title::after {
+    content: "";
+    position:absolute;
+    width: 144px;
+    height: 2px;
+     width: 100%;
+    background: #242424;
+    right: -100px;
+    top: 22px;
+}
+
+.info {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+
+.card {
+    position: relative;
+}
+
+p {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+text-transform: uppercase;
+color: #f9f8f4;
+}
+
+span {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+text-transform: uppercase;
+color: #f9f8f4;
+margin-top: 40px;
+}
+
+h3 {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+text-transform: uppercase;
+color: #f9f8f4;
+margin-bottom: 40px;
+}
+
+.left-column {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.bestseller__btn {
+    
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #242424;
+background: #f9f8f4;
+width: 200px;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+}
+
+.bestsellers__title {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 40px;
+text-transform: uppercase;
+color: #242424;
+margin-top: 140px;
+display: inline-block;
+position: relative;
+}
+
+.bestsellers__heading {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #242424;
+margin-top: 40px;
+}
+
+.bestsellers__text {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: #6c6c6c;
+margin-top: 20px;
+}
+
+
+.bestseller__card {
+    position: relative;
+}
+
+.card__icons{
+    position:absolute;
+    top:15px;
+    right: 10px;
+    display: flex;
+    gap: 24px;
+}
+
+.card__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width:40px;
+    height:40px;
+    background:#fff;
+   
+   
+
+}
+.bestsellers__products {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+
+.about__title {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 40px;
+text-transform: uppercase;
+color: #242424;
+position: relative;
+display: inline-block;
+
+
+}
+
+.about__heading {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #242424;
+margin-top: 40px;
+}
+
+.about__text {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: #6c6c6c;
+margin-top: 20px;
+margin-bottom: 60px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+   
+    width: 100%;
+height: 344px;
+border-top:2px solid #242424;
+margin-top: 140px;
+.container {
+display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+}
+
+
+.icones__title {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+line-height: 90%;
+color: #242424;
+display: flex;
+flex-direction: column;
+}
+
+.icones {
+    margin-left: 585px;
+}
+
+.about {
+    margin-top: 140px;
+}
+
+.shop {
+    margin-top: 140px;
+}
+
+.bestsellers__products {
+    margin-top: 60px;
+}
+
+.bestsellers__title::after {
+    content: "";
+    position:absolute;
+    width: 144px;
+    height: 2px;
+    background: #242424;
+    right: -180px;
+    top: 22px;
+}
+
+.about__title::after {
+    content: "";
+    position:absolute;
+    width: 144px;
+    height: 2px;
+    background: #242424;
+    right: -180px;
+    top: 22px;
+}
+
+a {
+     color: #242424;;
+}
